@@ -21,4 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+  Use NVM to use latest node
+
+  Use RVM and use rails 6
+
+  Bundle install
+
+  rails db:create
+
+  foreman start -f Procfile.dev
