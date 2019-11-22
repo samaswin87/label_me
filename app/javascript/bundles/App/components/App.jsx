@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
+import Routes from '../../../Routes';
 
-export default class HelloWorld extends React.Component {
+export default class App extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired, // this is passed from the Rails view
   };
@@ -23,23 +28,23 @@ export default class HelloWorld extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>
-          Hello, {this.state.name}!
-        </h3>
+      <Router>
+        <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/hello_world">Hello World</Link>
+          </li>
+          <li>
+            <Link to="/bye_world">Bye World</Link>
+          </li>
+        </ul>
         <hr />
-        <form >
-          <label htmlFor="name">
-            Say hello to:
-          </label>
-          <input
-            id="name"
-            type="text"
-            value={this.state.name}
-            onChange={(e) => this.updateName(e.target.value)}
-          />
-        </form>
-      </div>
+        </div>
+        <Routes />
+      </Router>
     );
   }
 }
