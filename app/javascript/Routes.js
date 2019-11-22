@@ -3,7 +3,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import App from './bundles/App/components/App';
+import App from './bundles/home/components/App';
 
 export default () => {
   return (
