@@ -1,22 +1,14 @@
 import React from 'react';
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
-import App from './bundles/App/components/App';
 
-export default () => {
-  return (
-    <Switch>
-      <Route exact path="/">
-        <h3>Root Path Component</h3>
-      </Route>
-      <Route path="/hello_world">
-        <h3>Hello World Component</h3>
-      </Route>
-      <Route path="/bye_world">
-        <h3>Bye World Component</h3>
-      </Route>
-    </Switch>
-  );
-}
+const Login = React.lazy(() => import('/bundles/App/components/Login'));
+const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
+const Flags = React.lazy(() => import('./views/Icons/Flags'));
+const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
+const SimpleLineIcons = React.lazy(() => import('./views/Icons/SimpleLineIcons'));
+
+// https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
+const routes = [
+  { path: '/', exact: true, name: 'Login' },
+]
+
+export default routes;
