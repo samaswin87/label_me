@@ -13,7 +13,7 @@
 
   * Manage document URL based on label and structured
 
-* Store code snippets where they can refer later - label it
+* Store code snippets where they can refer later - label it (like code-notes)
 
 * Need to add a wiki-like BookStack (Own book) and label it
 
