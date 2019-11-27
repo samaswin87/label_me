@@ -2,26 +2,32 @@
 
 ![340668-PA9Q76-722 (1)](https://user-images.githubusercontent.com/50949606/69701059-0b023900-1112-11ea-83a0-18aa92cbf9ba.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## GOAL
+* Store the URL which I am reading and label it (Later I can search)
 
-Things you may want to cover:
+  * Manage plugins URL based on a label
+  
+  * Manage blog post URL based on label (Like Pocket firefox)
 
-* Ruby version
+* Store my private documents for developers on google drive/dropbox and access the URL here (Personal storages)
 
-* System dependencies
+  * Manage document URL based on label and structured
 
-* Configuration
+* Store code snippets where they can refer later - label it
 
-* Database creation
+* Need to add a wiki-like BookStack (Own book) and label it
 
-* Database initialization
+* Create a team and they can share URL or posts based on label - peer can save the same label or change it
 
-* How to run the test suite
+* Store keys personally - we can store website URL with credentials in an encrypted manner (like RatticWeb)
 
-* Services (job queues, cache servers, search engines, etc.)
+* Store OS-related commands/shortcuts
 
-* Deployment instructions
+* Need to create a chrome and firefox addons and bookmark URL fast (Like Pocket firefox)
+
+* Create an android and IOS app to access these through API
+
+## Deployment instructions 
 
   Use NVM to use latest node
 
