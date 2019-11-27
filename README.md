@@ -30,3 +30,6 @@ Things you may want to cover:
   rails db:create
 
   foreman start -f Procfile.dev
+
+
+![340668-PA9Q76-722](https://user-images.githubusercontent.com/50949606/69700988-e4dc9900-1111-11ea-8856-3928e2d5f110.jpg)
