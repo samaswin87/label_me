@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Login = React.lazy(() => import('/bundles/App/components/Login'));
+const Login = React.lazy(() => import('/bundles/components/Login'));
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/Icons/Flags'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));

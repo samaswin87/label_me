@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link, HashRouter, Switch, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
-import '../../../../assets/stylesheets/App.scss'
+import '../../../assets/stylesheets/login.scss'
 
 export default class Login extends React.Component {
 
   render() {
     return (
-      <HashRouter>
+      <Router>
         <div className="app flex-row align-items-center">
           <Container>
             <Row className="justify-content-center">
@@ -49,7 +49,7 @@ export default class Login extends React.Component {
                     <CardBody className="text-center">
                       <div>
                         <h2>Sign up</h2>
-                        <p>We will give an demo account and you can play with it. Free for 2 months</p>
+                        <p>Our goal to maintain developers learn many and they should not loose any meterials or knowledge.</p>
                         <Link to="/register">
                           <Button color="primary" className="mt-3" active tabIndex={-1}>Register Now!</Button>
                         </Link>
@@ -61,7 +61,7 @@ export default class Login extends React.Component {
             </Row>
           </Container>
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 }
