@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
-import '../../../assets/stylesheets/login.scss'
+import '../../../../assets/stylesheets/login.scss'
 
 export default class Login extends React.Component {
 
