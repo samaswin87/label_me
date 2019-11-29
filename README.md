@@ -9,6 +9,8 @@
   
   * Manage blog post URL based on label (Like Pocket firefox)
 
+* Alert reminder with timer (Daily I can set, monday.com)
+
 * Store my private documents for developers on google drive/dropbox and access the URL here (Personal storages)
 
   * Manage document URL based on label and structured
