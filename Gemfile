@@ -58,3 +58,4 @@ gem 'react_on_rails', '11.1.4' # Use the exact gem version to match npm version
 
 gem 'mini_racer', platforms: :ruby
 gem 'sprockets-es6'
+gem 'devise'
