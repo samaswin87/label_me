@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_11_29_062813) do
 
-  create_table "topics", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "topics", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", limit: 120
     t.text "description"
     t.text "url"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_11_29_062813) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", limit: 128, default: "", null: false
-    t.string "encrypted_password", limit: 24, default: "", null: false
+    t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

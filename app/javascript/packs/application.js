@@ -23,6 +23,7 @@ import Login from '../bundles/Login/components/Login';
 import 'flag-icon-css/css/flag-icon.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'simple-line-icons/css/simple-line-icons.css';
+import $ from 'jquery';
 
 // This is how react_on_rails can see the App in the browser.
 ReactOnRails.register({
