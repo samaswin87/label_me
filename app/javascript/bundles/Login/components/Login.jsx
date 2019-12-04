@@ -5,7 +5,7 @@ import '../../../../assets/stylesheets/login.scss'
 import ajax from 'axios';
 
 
-export default class Login extends React.Component {
+class Login extends React.Component {
 
   constructor(props) {
     super(props);
@@ -26,7 +26,13 @@ export default class Login extends React.Component {
     this.setState({password: event.target.value});
   }
 
+  registerUser(event){
+    event.preventDefault();
+    window.location = this.props.url;
+  }
+
   render() {
+    console.log(this.props);
     return (
       <Router>
         <div className="app flex-row align-items-center">
@@ -69,9 +75,10 @@ export default class Login extends React.Component {
                       <div>
                         <h2>Sign up</h2>
                         <p>Our goal to maintain developers learn many and they should not loose any meterials or knowledge.</p>
-                        <Link to="/register">
-                          <Button color="primary" className="mt-3" active tabIndex={-1}>Register Now!</Button>
-                        </Link>
+
+                        <Col xs="6" className="text-center">
+                          <Button onClick={this.registerUser} color="primary" className="mt-3 center_button" active tabIndex={-1}>Register Now!</Button>
+                        </Col>
                       </div>
                     </CardBody>
                   </Card>
@@ -84,3 +91,5 @@ export default class Login extends React.Component {
     );
   }
 }
+
+export default Login;

@@ -3,7 +3,7 @@
 # +------------------------+--------------+------+-----+---------+----------------+
 # | id                     | bigint(20)   | NO   | PRI | NULL    | auto_increment |
 # | email                  | varchar(128) | NO   | UNI |         |                |
-# | encrypted_password     | varchar(24)  | NO   |     |         |                |
+# | encrypted_password     | varchar(255) | NO   |     |         |                |
 # | reset_password_token   | varchar(255) | YES  | UNI | NULL    |                |
 # | reset_password_sent_at | datetime     | YES  |     | NULL    |                |
 # | remember_created_at    | datetime     | YES  |     | NULL    |                |
